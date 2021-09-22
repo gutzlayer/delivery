@@ -16,9 +16,13 @@ const submitHandler = (event) => {
 };
 
   return(
-    <div className="container">
-    <TrackingForm submitHandler={submitHandler} />
-    <TrackingEvents events={events} />
+    <div>
+      {/* <h1>A transportadora</h1> */}
+
+      <div className="container">
+        <TrackingForm submitHandler={submitHandler} />
+        <TrackingEvents events={events} />
+      </div>
     </div>
   )
 };

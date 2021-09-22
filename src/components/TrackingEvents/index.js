@@ -4,7 +4,7 @@ function TrackingEvents({ events }) {
     if (!events || events.length ===0) return null;
     return (
         <Fragment>
-            <h1>Tracking Events</h1>
+            <h3>Onde está a minha encomenda?</h3>
             <ul className="list-group">
                 {events.map(item => {
                     return (

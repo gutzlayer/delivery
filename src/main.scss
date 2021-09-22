@@ -5,10 +5,16 @@ $theme-colors: (
 );
 
 .container {
-border: red;
-};
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
 
 .list-group-item span {
     display: block;
     width:100%;
+};
+
+.btn-primary {
+    margin: 20px 0 20px 0;
 }
