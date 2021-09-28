@@ -1,45 +1,39 @@
 import React from 'react'
-import {Navbar, Container, Nav, NavDropdown, Form, FormControl, Button} from 'react-bootstrap'
+import {Navbar, Nav, NavDropdown, Form, FormControl, Button} from 'react-bootstrap'
 import './navbar.scss'
-import logo from '/logo-transportadora.png'
 
 const Menu = () => {
-    return (
-        <div>
-            <Navbar collapseOnSelect fixed="top" expand="lg" bg="light" variant="light">
-  <Container className="nav-bar">
-  <Navbar.Brand href="#home">
-      <img src={logo} width="30" height="30" className="d-inline-block align-top" alt="Transportadora logo" />
-  </Navbar.Brand>
-  <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-  <Navbar.Collapse id="responsive-navbar-nav">
-    <Nav className="me-auto">
-      <Nav.Link href="#sobre">Sobre</Nav.Link>
-      <NavDropdown title="Encomendas" id="collasible-nav-dropdown">
-        <NavDropdown.Item href="#encomenda/3.1">O que é uma encomenda</NavDropdown.Item>
-        <NavDropdown.Item href="#encomenda/3.2">Como fazemos entregas</NavDropdown.Item>
-        <NavDropdown.Item href="#encomenda/3.3">Afins</NavDropdown.Item>
-        <NavDropdown.Divider />
-        <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
-      </NavDropdown>
-    </Nav>
-    <Nav>
-      <Nav.Link href="#sociais">Redes sociais</Nav.Link>
-    </Nav>
-  </Navbar.Collapse>
-  <Form className="d-flex">
-      <FormControl
-        type="search"
-        placeholder="Search"
-        className="mr-2"
-        aria-label="Search"
-      />
-      <Button variant="outline-success">Search</Button>
-    </Form>
-  </Container>
-</Navbar>
-        </div>
-    )
+  return (
+    <Navbar fixed="top" bg="light" expand="lg">
+      <Navbar.Brand className="nav-bar" href="#">Transportadora</Navbar.Brand>
+      <Navbar.Toggle aria-controls="navbarScroll" />
+      <Navbar.Collapse id="navbarScroll">
+        <Nav
+          className="mr-auto my-2 my-lg-0"
+          style={{ maxHeight: '100px' }}
+          navbarScroll
+        >
+          <Nav.Link href="#">Home</Nav.Link>
+          <Nav.Link href="#sobre">Sobre</Nav.Link>
+          <NavDropdown title="Encomendas" id="navbarScrollingDropdown">
+            <NavDropdown.Item href="#encomenda">O que é uma encomenda?</NavDropdown.Item>
+            <NavDropdown.Item href="#pedido">Onde está meu pedido?</NavDropdown.Item>
+            <NavDropdown.Divider />
+            <NavDropdown.Item href="#outros">Outros</NavDropdown.Item>
+          </NavDropdown>
+        </Nav>
+        <Form className="d-flex">
+          <FormControl
+            type="search"
+            placeholder="Search"
+            className="mr-2"
+            aria-label="Search"
+          />
+          <Button className="btn" variant="primary">Search</Button>
+        </Form>
+      </Navbar.Collapse>
+    </Navbar>
+  )
 }
 
 export default Menu

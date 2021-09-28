@@ -19,31 +19,31 @@ const submitHandler = (event) => {
 
   return(
     <React.Fragment>
-  <div>
-    <body>
-      <header>
-    <Menu />
-      </header>
-      <main>
-      <div className="pAndPlayer">
-      <div className="container">
-        <TrackingForm submitHandler={submitHandler} />
-        <TrackingEvents events={events} />
+      <div>
+        <body>
+          <header>
+            <Menu />
+          </header>
+          <main>
+            <div className="pAndPlayer">
+              <div className="container">
+                <TrackingForm submitHandler={submitHandler} />
+                <TrackingEvents events={events} />
+              </div>
+                  <Player
+                    autoplay
+                    loop
+                    src="https://assets8.lottiefiles.com/private_files/lf30_j56x43l3.json"
+                    style={{ height: '700px', width: '700px' }}
+                  >
+                  <Controls visible={false} buttons={['play', 'repeat', 'frame', 'debug']} />
+                  </Player>
+            </div>
+          </main>
+              <Footer />
+        </body>
       </div>
-          <Player
-            autoplay
-            loop
-            src="https://assets8.lottiefiles.com/private_files/lf30_j56x43l3.json"
-            style={{ height: '600px', width: '600px' }}
-          >
-          <Controls visible={false} buttons={['play', 'repeat', 'frame', 'debug']} />
-          </Player>
-      </div>
-      </main>
-          <Footer />
-    </body>
-  </div>
-  </React.Fragment>
+    </React.Fragment>
   )
 };
 

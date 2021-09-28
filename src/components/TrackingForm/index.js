@@ -3,7 +3,7 @@ import React, { Fragment } from 'react';
 function TrackingForm({ submitHandler }) {
     return (
         <Fragment>
-            <h1>Achar minha encomenda</h1>
+            <h1 className="encomenda">Achar minha encomenda</h1>
             <form onSubmit={submitHandler}>
                 <div className="form-group">
                     <input type="text" name="tracking" className="form-control"/>

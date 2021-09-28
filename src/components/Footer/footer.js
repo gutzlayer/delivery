@@ -7,7 +7,7 @@ const Footer = () => {
             <div className="container">
                 <div className="row">
                     <div className="col">
-                        <h4>A Transportadora</h4>
+                        <h5>Transportadora</h5>
                         <ul className="list-unstyled">
                             <li>12345-678</li>
                             <li>São Paulo, Brasil</li>
@@ -15,16 +15,16 @@ const Footer = () => {
                         </ul>
                     </div>
                     <div className="col">
-                        <h4>Tudo sobre suas entregas</h4>
-                        <ul className="list-unstylled">
+                        <h5>Entregas</h5>
+                        <ul className="list-unstyled">
                             <li>Pesquisar encomenda</li>
                             <li>Onde ela está?</li>
                             <li>O que é encomenda?</li>
                         </ul>
                     </div>
                     <div className="col">
-                        <h4>Tudo sobre suas entregas</h4>
-                        <ul className="list-unstylled">
+                        <h5>O que fazemos?</h5>
+                        <ul className="list-unstyled">
                             <li>Sobre nós</li>
                             <li>Projetos</li>
                             <li>O que é encomenda?</li>
@@ -34,7 +34,7 @@ const Footer = () => {
                 <hr />
                 <div className="row">
                     <p className="col-sm">
-                        &copy;{new Date().getFullYear()} A transportadora | Todos os direitos reservados | Termos de serviço | Privacidade
+                        &copy;{new Date().getFullYear()} Transportadora | Todos os direitos reservados | Termos de serviço | Privacidade
                     </p>
                 </div>
             </div>
