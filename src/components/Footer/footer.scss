@@ -1,0 +1,15 @@
+@import 'node_modules/bootstrap/scss/bootstrap.scss';
+
+.main-footer {
+    color: yellow;
+    background-color: #1e346e;
+    padding-top: 10px;
+    position: relative;
+    bottom:0;
+    width: 100%
+}
+
+.col-sm {
+    display: flex;
+    justify-content: center;
+}
