@@ -5,7 +5,7 @@ import './navbar.scss'
 const Menu = () => {
   return (
     <Navbar fixed="top" bg="light" expand="lg">
-      <Navbar.Brand className="nav-bar" href="#"></Navbar.Brand>
+      <Navbar.Brand className="nav-bar" href="#">Transportadora</Navbar.Brand>
       <Navbar.Toggle aria-controls="navbarScroll" />
       <Navbar.Collapse id="navbarScroll">
         <Nav
