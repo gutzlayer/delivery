@@ -19,13 +19,13 @@ function App() {
 
     return(
       <React.Fragment>
-        <div  className="main">
-          <header>
-            <Menu />
-          </header>
+        <header>
+          <Menu />
+        </header>
+        <div className="main">
           <div className="tAndP">
             <section>
-              <TrackingForm submitHandler={submitHandler} />
+              <TrackingForm className="tracking" submitHandler={submitHandler} />
               <TrackingEvents events={events} />
             </section>
             <aside>
@@ -38,10 +38,8 @@ function App() {
             </Player>   
             </aside>
           </div>
-          <footer>
-            <Footer />
-          </footer>
         </div>
+          <Footer />
       </React.Fragment>
     )
 };

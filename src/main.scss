@@ -3,8 +3,11 @@
 .main {
     background: url("background-img.png") no-repeat center center;
     background-size: cover;
-    min-height: 100%;
-    max-height: fit-content;
+    min-height: 100vh;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: row;
 }
 
 .tAndP { 
@@ -12,21 +15,18 @@
     justify-content:center;
     align-items: center;
     flex-direction: row;
-    margin-left: 20%;
+    padding: 5%;
+}
+
+.tracking {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
 }
 
 .player {
-    width: 50%;
-}
-
-.encomenda {
-    color: #FFDE59;
-}
-
-.container {
-    display: flex;
-    flex-direction: column;
-    width: 30%;
+    width: 70%;
 }
 
 .btn-primary {
