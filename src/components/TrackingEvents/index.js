@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react';
+import './tracking.scss'
 
 function TrackingEvents({ events }) {
     if (!events || events.length ===0) return null;
