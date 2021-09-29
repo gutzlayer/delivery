@@ -25,11 +25,11 @@ const Menu = () => {
         <Form className="d-flex">
           <FormControl
             type="search"
-            placeholder="Search"
+            placeholder="Procurar no site..."
             className="mr-2"
-            aria-label="Search"
+            aria-label="Procurar no site..."
           />
-          <Button className="btn" variant="primary">Search</Button>
+          <Button className="btn" variant="primary">Pesquisar</Button>
         </Form>
       </Navbar.Collapse>
     </Navbar>
